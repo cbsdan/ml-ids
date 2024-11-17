@@ -94,7 +94,7 @@ const Header = () => {
                         Attacks
                       </Link>
                     </li>
-                    {isAdmin() && (
+                    {user && (
                       <li>
                         <Link className="dropdown-item" to="/stats">
                           Stats
