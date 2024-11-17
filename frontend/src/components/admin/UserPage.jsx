@@ -36,7 +36,7 @@ const UserPage = () => {
           "Content-Type": "application/json",
         };
         const response = await fetch(
-          `https://intrusion-detection-system-i8yj.onrender.com/admin/all-users`,
+          `${import.meta.env.VITE_API}/admin/all-users`,
           {
             headers: headers,
           }

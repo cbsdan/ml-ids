@@ -129,9 +129,9 @@ const Parameters = () => {
         },
       };
 
-      const url = `https://intrusion-detection-system-i8yj.onrender.com/parameters`;
-      const newNetworkTrafficUrl = `https://intrusion-detection-system-i8yj.onrender.com/network-traffic`;
-      const logsUrl = `https://intrusion-detection-system-i8yj.onrender.com/log`;
+      const url = `${import.meta.env.VITE_API}/parameters`;
+      const newNetworkTrafficUrl = `${import.meta.env.VITE_API}/network-traffic`;
+      const logsUrl = `${import.meta.env.VITE_API}/log`;
 
       const { data: response } = await axios.post(url, formData, config);
       console.log(response);

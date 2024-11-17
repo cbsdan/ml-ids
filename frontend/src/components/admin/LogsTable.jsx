@@ -38,7 +38,7 @@ const LogsTable = () => {
           Authorization: `Bearer ${getToken()}`,
           "Content-Type": "application/json",
         };
-        const response = await fetch(`https://intrusion-detection-system-i8yj.onrender.com/logs-all`, {
+        const response = await fetch(`${import.meta.env.VITE_API}/logs-all`, {
           headers: headers,
         });
 

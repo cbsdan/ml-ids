@@ -32,7 +32,7 @@ function LoginPage() {
         },
       };
 
-      const url = `https://intrusion-detection-system-i8yj.onrender.com/login`;
+      const url = `${import.meta.env.VITE_API}/login`;
       
       const { data: response } = await axios.post(url, data, config);
       console.log(response);

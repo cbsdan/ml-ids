@@ -19,7 +19,7 @@ const Predict = () => {
 
     try {
       const response = await axios.post(
-        `https://intrusion-detection-system-i8yj.onrender.com/uploadjavatpoint`,
+        `${import.meta.env.VITE_API}/uploadjavatpoint`,
         formData,
         {
           headers: {
@@ -54,7 +54,7 @@ const Predict = () => {
     setStatusMessage("Machine Learning is analyzing the random network traffic parameters...");
 
     try {
-      const response = await axios.get(`https://intrusion-detection-system-i8yj.onrender.com/secrets`);
+      const response = await axios.get(`${import.meta.env.VITE_API}/secrets`);
 
       const dataToPass = {
         knn: response.data.knn,

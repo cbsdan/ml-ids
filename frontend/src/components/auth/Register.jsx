@@ -30,7 +30,7 @@ function Register() {
         },
       };
 
-      const url = `https://intrusion-detection-system-i8yj.onrender.com/register`;
+      const url = `${import.meta.env.VITE_API}/register`;
 
       const { data: res } = await axios.post(url, data, config);
 

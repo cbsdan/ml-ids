@@ -112,7 +112,7 @@ const ChartsPage = () => {
 
     try {
       const { data } = await axios.get(
-        `https://intrusion-detection-system-i8yj.onrender.com/binary-class-type-counts`,
+        `${import.meta.env.VITE_API}/binary-class-type-counts`,
         config
       );
       console.log(data);
@@ -181,7 +181,7 @@ const ChartsPage = () => {
     };
     try {
       const { data } = await axios.get(
-        `https://intrusion-detection-system-i8yj.onrender.com/multi-class-type-counts`,
+        `${import.meta.env.VITE_API}/multi-class-type-counts`,
         config
       );
       console.log(data);
@@ -398,7 +398,7 @@ const ChartsPage = () => {
     };
     try {
       const { data } = await axios.get(
-        `https://intrusion-detection-system-i8yj.onrender.com/admin/userCounts`,
+        `${import.meta.env.VITE_API}/admin/userCounts`,
         config
       );
       console.log(data);
@@ -419,7 +419,7 @@ const ChartsPage = () => {
     };
     try {
       const { data } = await axios.get(
-        `https://intrusion-detection-system-i8yj.onrender.com/logs-count`,
+        `${import.meta.env.VITE_API}/logs-count`,
         config
       );
       console.log(data);
